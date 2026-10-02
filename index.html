@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="color-scheme" content="light">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>A letter for you</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap">
+<style>
+:root{--bg:#f3ecee;--ink:#2b2230;--soft:#6b5b72;--rose:#b4506e;--line:#d9c9d0;--card:#fbf7f8;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:"Newsreader",Georgia,serif;font-size:1.22rem;line-height:1.75;font-weight:300}
+main{max-width:34rem;margin:0 auto;padding:4.5rem 1.5rem 5rem}
+h1{font-weight:300;font-style:italic;font-size:clamp(2.4rem,9vw,3.6rem);line-height:1.1;margin:0 0 2.5rem;letter-spacing:-.01em}
+p{margin:0 0 1.5rem}
+#letter p{text-align:justify;text-justify:inter-word;hyphens:auto;-webkit-hyphens:auto}
+#letter p.sign{text-align:left}
+.lead{font-size:1.45rem;line-height:1.5;color:var(--rose);font-style:italic}
+.hint{color:var(--soft);font-size:1rem;margin-bottom:3rem}
+.reveal{opacity:0;transform:translateY(10px);animation:in .9s ease forwards}
+@keyframes in{to{opacity:1;transform:none}}
+.reveal{animation-delay:calc(var(--i,1)*.55s)}
+.sign{margin-top:1rem;font-size:1.6rem}
+.reply{margin-top:3.5rem;padding:1.6rem;border:1px solid var(--line);background:var(--card);border-radius:14px}
+.reply h2{font-size:1.2rem;font-weight:400;margin:0 0 1rem}
+.btns{display:flex;flex-wrap:wrap;gap:.75rem}
+button{font:inherit;font-size:1.05rem;padding:.7rem 1.2rem;border-radius:999px;border:1px solid var(--rose);background:transparent;color:var(--rose);cursor:pointer;min-height:44px}
+button.primary{background:var(--rose);color:var(--bg)}
+button:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+#answer{margin:1.2rem 0 0;min-height:1.5em;color:var(--soft)}
+@media (prefers-reduced-motion:reduce){.reveal{animation:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<main>
+<h1 class="reveal" style="--i:0">I know I was the one who ended things.</h1>
+<div id="letter">
+<p class="reveal lead" style="--i:1">And honestly, I regret it.</p>
+<p class="reveal" style="--i:2">I thought breaking up with you was the only way I could stop hurting you, but after these past two days, I realized that running away from our problems wasn't the answer.</p>
+<p class="reveal" style="--i:3">I still love you. I still want you. And I still want us.</p>
+<p class="reveal" style="--i:4">I'm not going to promise that I'll suddenly become perfect, because I know I have things I need to work on. But I want to try to change the things that hurt you instead of giving up on us whenever things get difficult. I know saying sorry isn't enough, and I know words alone can't fix everything. I have to show you through my actions that I'm serious about changing.</p>
+<p class="reveal" style="--i:5">I've been thinking a lot about us, about everything we've been through, and about the moments where I could've handled things differently. I know there were times when I made you feel hurt, disappointed, or like you weren't being loved the way you deserved. And I'm really sorry for that. You didn't deserve to feel that way, especially because of me.</p>
+<p class="reveal" style="--i:6">I don't want to come back just because I miss you. I want to come back because I want to make things right and learn how to love you better. I want to communicate with you instead of shutting down. I want to talk about our problems instead of thinking that leaving is the solution. And when things get hard, I want to learn how to stay and work through them with you.</p>
+<p class="reveal" style="--i:7">These past two days made me realize how much you mean to me. Losing you, even for a short time, made me realize that I don't actually want a life where I just let you go whenever I'm scared that I'll hurt you. I want to become someone who can make you feel safe, loved, heard, and appreciated.</p>
+<p class="reveal" style="--i:8">I know things won't magically become okay just because I'm asking for another chance. I understand if you're still hurt, confused, or scared that I'll hurt you again. I don't expect you to trust me immediately. If you need time, I'll understand. I just want the chance to show you, little by little, that I really mean what I'm saying.</p>
+<p class="reveal" style="--i:9">If you still have a place in your heart for me, I want to try again. Slowly, properly, and with both of us willing to work on us. I don't want us to go back to exactly how things were. I want us to come back better, healthier, and more understanding of each other.</p>
+<p class="reveal" style="--i:10">I know I hurt you, and I'm really sorry. I can't change what happened, but I can change what I do from now on. I want to learn from my mistakes instead of repeating them. I want to be better not just because I want you back, but because you deserve a better version of me.</p>
+<p class="reveal" style="--i:11">And honestly, I'm scared too. I'm scared that maybe I've already hurt you too much or that maybe you won't want to try again. But I'd rather be honest about how I feel than pretend that I'm okay with losing you.</p>
+<p class="reveal lead" style="--i:12">I love you. I miss you. And I still choose you, aien.</p>
+<p class="reveal" style="--i:13">I just hope you can give me another chance to prove that I can do better, not through promises, but through my actions. I don't expect everything to be fixed overnight. I just want us to take it one step at a time, if you're willing, darling.❤️</p>
+</div>
+
+<section class="reply reveal" style="--i:15" aria-labelledby="rt">
+<h2 id="rt">Whatever you decide, I'll listen.</h2>
+<div class="btns">
+<button class="primary" data-msg="Thank you for hearing me out. Let's talk, slowly and properly.">Let's talk</button>
+<button data-msg="Take all the time you need. I'll be here, and I won't rush you.">I need more time</button>
+<button data-msg="I understand, and I respect your answer. Thank you for reading this.">I'm not ready</button>
+</div>
+<p id="answer" aria-live="polite"></p>
+</section>
+</main>
+<script>
+document.querySelectorAll('button[data-msg]').forEach(function(b){
+  b.addEventListener('click',function(){document.getElementById('answer').textContent=b.dataset.msg;});
+});
+</script>
+</body>
+</html>
